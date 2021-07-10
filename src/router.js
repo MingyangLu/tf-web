@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Index from './components/index/index'
-import Home from './components/Home'
+import Home from './components/home/Index'
 Vue.use(Router)
 export default new Router({
     routes: [
@@ -38,6 +38,9 @@ export default new Router({
             },{
                 path: '/authManagement',
                 component: () => import('@/components/auth/Index')
+            },{
+                path: '/latestCase',
+                component: () => import('@/components/exhibition/Index')
             }]
         }
     ]

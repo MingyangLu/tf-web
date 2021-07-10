@@ -11,7 +11,7 @@
       <div class="right">
         <!-- <div class="telphone">+13128985323</div>
         <div class="telphone">+13596465641</div> -->
-        <div class="live_chat">Login</div>
+        <!-- <div class="live_chat" @click="">Login</div> -->
       </div>
     </div>
     <div class="navigator">
@@ -112,6 +112,7 @@ export default {
           this.$router.push("/index");
           break;
         case "3":
+          this.$router.push("/latestCase");
           break;
         case "5-1":
           this.$router.push("/orderManagement");
